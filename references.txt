@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=EcucHCNPT1Y&t=1s Part 2(used to build the actual quiz)
+https://www.youtube.com/watch?v=1za7xsjsUAA Part 1 (used to build the actual quiz)
+http://stackoverflow.com/questions/38623576/how-to-increment-progress-bar-on-click (used to build the progress bar)

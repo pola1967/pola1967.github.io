@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/Quiz.css" rel="stylesheet" type="text/css">
+    <!--Roboto Slab Google Font - used for actual quiz -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body class="image">
+  <div class="container-fluid">
+  <div style="width:1000px; margin-left: auto; margin-right: auto; margin-top:4%;"><input type="text" placeholder="Please enter your name..." name="firstname" class="forminputs1" style="text-align: center;">
+    </div>
+     <br/>
+     <br/>
+ <div id="main-quiz" class="containerforquiz">
+ <div style="padding: 1em;">
+  <div class="progress">
+    <div id="progressbar" class="progress-bar progress-bar-striped active" style="width: 0%"></div>
+  </div>
+</div>
+			<div class="title">Euro 2016 Quiz!</div>
+			<div id="mainquestions" class="question"></div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+	<button id="nextButton" class="next" onclick="loadNextQuestion();">Next Question</button>
+	</div>
+	<div id="result" class="container-result" style="display:none;">
+    <br/><br/>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/>
+        <label style="color:#000000; font-size:24px; font:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; text-align:center;" id="lblRightAnswers"></label>
+        <br>
+    	<label style="color:#000000; font-size:24px; font:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; text-align:center;" id="lblWrongAnswers"></label>         
+  </div>
+          <br/><br/>
+        <button type="button" id="printIt" onclick="printTestResult()" style="width:7%; float:right; margin-right:3%;" class="btn btn-lg btn-default">Print</button>
+
+
+</script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <!--Javascript for actual quiz -->
+	<script src="js/mainquestions.js"></script>
+    <!-- Array of questions JS file-->
+	<script src="js/mainquiz.js"></script>
+
+<!--progress bar referenced from http://stackoverflow.com/questions/38623576/how-to-increment-progress-bar-on-click -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/progressbar.js"></script>
+  </body>
+</html>
